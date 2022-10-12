@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1DBF4328F6197D00DE3B47 /* JokesAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF4128F6197D00DE3B47 /* JokesAppModel.xcdatamodeld */; };
+		3B1DBF4628F61A1100DE3B47 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF4528F61A1100DE3B47 /* CoreDataManager.swift */; };
+		3B1DBF4828F61D5C00DE3B47 /* JokeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF4728F61D5C00DE3B47 /* JokeListViewModel.swift */; };
+		3B1DBF4A28F621CF00DE3B47 /* AddJokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF4928F621CF00DE3B47 /* AddJokeViewModel.swift */; };
+		3B1DBF5028F62D3E00DE3B47 /* AddJokeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF4F28F62D3E00DE3B47 /* AddJokeScreen.swift */; };
+		3B1DBF5328F62E8E00DE3B47 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF5228F62E8E00DE3B47 /* ViewExtensions.swift */; };
+		3B1DBF5528F630A600DE3B47 /* Jokes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF5428F630A600DE3B47 /* Jokes+Extensions.swift */; };
+		3B1DBF5728F630DA00DE3B47 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF5628F630DA00DE3B47 /* BaseModel.swift */; };
 		3B7E72A028F426270069BC8D /* TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E729F28F426270069BC8D /* TaskApp.swift */; };
 		3B7E72A228F426270069BC8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E72A128F426270069BC8D /* ContentView.swift */; };
 		3B7E72A428F426280069BC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E72A328F426280069BC8D /* Assets.xcassets */; };
@@ -14,8 +22,6 @@
 		3B7E72B128F426280069BC8D /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E72B028F426280069BC8D /* TaskTests.swift */; };
 		3B7E72BB28F426280069BC8D /* TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E72BA28F426280069BC8D /* TaskUITests.swift */; };
 		3B7E72BD28F426280069BC8D /* TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E72BC28F426280069BC8D /* TaskUITestsLaunchTests.swift */; };
-		3BB5CCBF28F4447E009F9D0D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5CCBE28F4447E009F9D0D /* ContentViewModel.swift */; };
-		3BB5CCC128F4454E009F9D0D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5CCC028F4454D009F9D0D /* Model.swift */; };
 		8058F6149A88F2742832F4AA /* Pods_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6C9FAB7F956EB11E9977DA /* Pods_Task.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +44,14 @@
 
 /* Begin PBXFileReference section */
 		1ED525BF0AEB33915BF2B51A /* Pods-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.release.xcconfig"; path = "Target Support Files/Pods-Task/Pods-Task.release.xcconfig"; sourceTree = "<group>"; };
+		3B1DBF4228F6197D00DE3B47 /* JokesAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokesAppModel.xcdatamodel; sourceTree = "<group>"; };
+		3B1DBF4528F61A1100DE3B47 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3B1DBF4728F61D5C00DE3B47 /* JokeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListViewModel.swift; sourceTree = "<group>"; };
+		3B1DBF4928F621CF00DE3B47 /* AddJokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJokeViewModel.swift; sourceTree = "<group>"; };
+		3B1DBF4F28F62D3E00DE3B47 /* AddJokeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJokeScreen.swift; sourceTree = "<group>"; };
+		3B1DBF5228F62E8E00DE3B47 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		3B1DBF5428F630A600DE3B47 /* Jokes+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jokes+Extensions.swift"; sourceTree = "<group>"; };
+		3B1DBF5628F630DA00DE3B47 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		3B7E729C28F426270069BC8D /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E729F28F426270069BC8D /* TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskApp.swift; sourceTree = "<group>"; };
 		3B7E72A128F426270069BC8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,8 +62,6 @@
 		3B7E72B628F426280069BC8D /* TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E72BA28F426280069BC8D /* TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITests.swift; sourceTree = "<group>"; };
 		3B7E72BC28F426280069BC8D /* TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3BB5CCBE28F4447E009F9D0D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		3BB5CCC028F4454D009F9D0D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5C6C9FAB7F956EB11E9977DA /* Pods_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFE0D4CF4F79294057224FB /* Pods-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.debug.xcconfig"; path = "Target Support Files/Pods-Task/Pods-Task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +92,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1DBF3B28F6172400DE3B47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B1DBF4F28F62D3E00DE3B47 /* AddJokeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B1DBF3C28F6172F00DE3B47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B1DBF5628F630DA00DE3B47 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B1DBF3D28F6173700DE3B47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B1DBF4728F61D5C00DE3B47 /* JokeListViewModel.swift */,
+				3B1DBF4928F621CF00DE3B47 /* AddJokeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B1DBF4428F619FA00DE3B47 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3B1DBF4528F61A1100DE3B47 /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3B1DBF5128F62E5100DE3B47 /* CustomExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B1DBF5228F62E8E00DE3B47 /* ViewExtensions.swift */,
+				3B1DBF5428F630A600DE3B47 /* Jokes+Extensions.swift */,
+			);
+			path = CustomExtensions;
+			sourceTree = "<group>";
+		};
 		3B7E729328F426270069BC8D = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +159,16 @@
 		3B7E729E28F426270069BC8D /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DBF5128F62E5100DE3B47 /* CustomExtensions */,
+				3B1DBF4428F619FA00DE3B47 /* Manager */,
+				3B1DBF3D28F6173700DE3B47 /* ViewModel */,
+				3B1DBF3C28F6172F00DE3B47 /* Model */,
+				3B1DBF3B28F6172400DE3B47 /* View */,
 				3B7E729F28F426270069BC8D /* TaskApp.swift */,
 				3B7E72A128F426270069BC8D /* ContentView.swift */,
 				3B7E72A328F426280069BC8D /* Assets.xcassets */,
 				3B7E72A528F426280069BC8D /* Preview Content */,
-				3BB5CCBE28F4447E009F9D0D /* ContentViewModel.swift */,
-				3BB5CCC028F4454D009F9D0D /* Model.swift */,
+				3B1DBF4128F6197D00DE3B47 /* JokesAppModel.xcdatamodeld */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -331,10 +389,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1DBF5028F62D3E00DE3B47 /* AddJokeScreen.swift in Sources */,
+				3B1DBF4628F61A1100DE3B47 /* CoreDataManager.swift in Sources */,
+				3B1DBF5328F62E8E00DE3B47 /* ViewExtensions.swift in Sources */,
 				3B7E72A228F426270069BC8D /* ContentView.swift in Sources */,
+				3B1DBF5728F630DA00DE3B47 /* BaseModel.swift in Sources */,
 				3B7E72A028F426270069BC8D /* TaskApp.swift in Sources */,
-				3BB5CCBF28F4447E009F9D0D /* ContentViewModel.swift in Sources */,
-				3BB5CCC128F4454E009F9D0D /* Model.swift in Sources */,
+				3B1DBF5528F630A600DE3B47 /* Jokes+Extensions.swift in Sources */,
+				3B1DBF4328F6197D00DE3B47 /* JokesAppModel.xcdatamodeld in Sources */,
+				3B1DBF4828F61D5C00DE3B47 /* JokeListViewModel.swift in Sources */,
+				3B1DBF4A28F621CF00DE3B47 /* AddJokeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +719,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B1DBF4128F6197D00DE3B47 /* JokesAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B1DBF4228F6197D00DE3B47 /* JokesAppModel.xcdatamodel */,
+			);
+			currentVersion = 3B1DBF4228F6197D00DE3B47 /* JokesAppModel.xcdatamodel */;
+			path = JokesAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B7E729428F426270069BC8D /* Project object */;
 }

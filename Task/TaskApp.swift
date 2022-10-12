@@ -11,8 +11,10 @@ import SwiftUI
 struct TaskApp: App {
     var body: some Scene {
         WindowGroup {
-            //ContentView(contentViewModel: ContentViewModel(model : Model()))
-            ContentView()
+            // Create instant of CoreData
+            let viewContext = CoreDataManager.shared.presistentStoreContainer.viewContext
+            ContentView(vm: JokeListViewModel(context: viewContext))
+                .environment(\.managedObjectContext, viewContext)
         }
     }
 }
