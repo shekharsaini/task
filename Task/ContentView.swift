@@ -9,6 +9,9 @@ import Foundation
 import SwiftUI
 import CoreData
 import Alamofire
+import Combine
+
+
 
 struct ContentView: View {
     @State private var isPresented: Bool = false
@@ -17,6 +20,7 @@ struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var sjoke: String = ""
     
+   
     // New
     
     init(vm: JokeListViewModel){
@@ -36,9 +40,16 @@ struct ContentView: View {
                 List{
                     ForEach(jokeListVM.jokess){
                         jokes in
-                        Text(jokes.joke)
-                            .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
-                        
+                        VStack {
+                            NavigationLink(destination: JokeTextView(text: jokes.joke) ) {
+                                Text(jokes.joke)
+//                                    .gesture(TapGesture()
+//                                        .onEnded({ _ in
+//                                            //your action here
+//                                           // JokeTextView(text: jokes.joke)
+//                                }))
+                            }
+                        }
                     }
                 }.padding(20)
             }
@@ -70,7 +81,6 @@ struct ContentView: View {
     
     
     func callAPI() {
-            
            // Api Request
            AF.request("https://geek-jokes.sameerkumar.website/api").response {
                response in
@@ -96,5 +106,38 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+
+struct JokeTextView : UIViewRepresentable{
+    // Normal implemantation of UIKit
+    
+    var text: String
+    func makeUIView(context: Context) -> UITextView {
+        let view = UITextView()
+        view.font = UIFont.systemFont(ofSize: 30)
+        return view
+    }
+
+    func updateUIView(_ uiView: UITextView, context: Context) {
+        uiView.text = text
+        print(text)
+    }
+}
+
+struct TestControllerView : UIViewControllerRepresentable {
+
+     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+    
+     }
+
+     func makeUIViewController(context: Context) -> some UIViewController {
+
+         // if you want to call any StoryBoard Controller you can use this
+        guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "JokesViewController") as? JokesViewController else {
+            fatalError("ViewController not implemented in storyboard")
+        }
+    
+        return viewController
+     }
+}
 
 

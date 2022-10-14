@@ -15,6 +15,7 @@
 		3B1DBF5328F62E8E00DE3B47 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF5228F62E8E00DE3B47 /* ViewExtensions.swift */; };
 		3B1DBF5528F630A600DE3B47 /* Jokes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF5428F630A600DE3B47 /* Jokes+Extensions.swift */; };
 		3B1DBF5728F630DA00DE3B47 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DBF5628F630DA00DE3B47 /* BaseModel.swift */; };
+		3B3D7F6428F894A2007420F6 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D7F6328F894A2007420F6 /* JokesViewController.swift */; };
 		3B7E72A028F426270069BC8D /* TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E729F28F426270069BC8D /* TaskApp.swift */; };
 		3B7E72A228F426270069BC8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E72A128F426270069BC8D /* ContentView.swift */; };
 		3B7E72A428F426280069BC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E72A328F426280069BC8D /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		3B1DBF5228F62E8E00DE3B47 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		3B1DBF5428F630A600DE3B47 /* Jokes+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jokes+Extensions.swift"; sourceTree = "<group>"; };
 		3B1DBF5628F630DA00DE3B47 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		3B3D7F6328F894A2007420F6 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		3B7E729C28F426270069BC8D /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E729F28F426270069BC8D /* TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskApp.swift; sourceTree = "<group>"; };
 		3B7E72A128F426270069BC8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3B1DBF4F28F62D3E00DE3B47 /* AddJokeScreen.swift */,
+				3B3D7F6328F894A2007420F6 /* JokesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				3B1DBF4628F61A1100DE3B47 /* CoreDataManager.swift in Sources */,
 				3B1DBF5328F62E8E00DE3B47 /* ViewExtensions.swift in Sources */,
 				3B7E72A228F426270069BC8D /* ContentView.swift in Sources */,
+				3B3D7F6428F894A2007420F6 /* JokesViewController.swift in Sources */,
 				3B1DBF5728F630DA00DE3B47 /* BaseModel.swift in Sources */,
 				3B7E72A028F426270069BC8D /* TaskApp.swift in Sources */,
 				3B1DBF5528F630A600DE3B47 /* Jokes+Extensions.swift in Sources */,
@@ -563,6 +567,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -574,7 +579,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -592,6 +597,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -603,7 +609,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
